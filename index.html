@@ -4,42 +4,983 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <title>Karlo</title>
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Karlo Hrvačić - Software Engineer | Java Spring Boot & Kubernetes Expert</title>
+    <meta name="title" content="Karlo Hrvačić - Software Engineer | Java Spring Boot & Kubernetes Expert">
+    <meta name="description" content="Software Engineer at GreenByteHub specializing in Java Spring Boot, Kubernetes, Docker, and cloud-native architectures. 3+ years of experience building scalable distributed systems in Zagreb, Croatia.">
+    <meta name="keywords" content="Karlo Hrvačić, Java developer Zagreb, Spring Boot expert, Kubernetes engineer, DevOps Croatia, software engineer, backend developer, Elasticsearch, Docker">
+    <meta name="author" content="Karlo Hrvačić">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://karlo.cc/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://karlo.cc/">
+    <meta property="og:title" content="Karlo Hrvačić - Software Engineer">
+    <meta property="og:description" content="Software Engineer specializing in Java Spring Boot, Kubernetes, and cloud-native architectures. Building scalable systems at GreenByteHub.">
+    <meta property="og:image" content="https://karlo.cc/img/profile-og.jpg">
+    <meta property="og:locale" content="en_US">
+    <meta property="profile:first_name" content="Karlo">
+    <meta property="profile:last_name" content="Hrvačić">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Karlo Hrvačić - Software Engineer">
+    <meta name="twitter:description" content="Java Spring Boot & Kubernetes expert building scalable distributed systems.">
+    <meta name="twitter:image" content="https://karlo.cc/img/profile-og.jpg">
+
+    <!-- Mobile & Theme -->
+    <meta name="theme-color" content="#101214">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+
+    <!-- FontAwesome with async loading -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css" media="print" onload="this.media='all'; this.onload=null;">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"></noscript>
+
+    <!-- Structured Data - Person Schema -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Karlo Hrvačić",
+            "url": "https://karlo.cc/",
+            "image": "https://karlo.cc/img/profile.jpg",
+            "jobTitle": "Software Engineer",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "GreenByteHub"
+            },
+            "description": "Software Engineer specializing in Java Spring Framework, Kubernetes, Docker, and cloud-native architectures",
+            "email": "karlo@hrva.cc",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Zagreb",
+                "addressCountry": "HR"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Zagreb University of Applied Sciences"
+            },
+            "knowsAbout": [
+                "Java",
+                "Spring Boot",
+                "Kubernetes",
+                "Docker",
+                "Elasticsearch",
+                "PostgreSQL",
+                "Prometheus",
+                "Grafana",
+                "RabbitMQ",
+                "Jenkins",
+                "Terraform",
+                "AWS",
+                "Angular",
+                "DevOps"
+            ],
+            "sameAs": [
+                "https://linkedin.com/in/karlohrvacic",
+                "https://github.com/karlohrvacic"
+            ]
+        }
+    </script>
+
+    <style>
+        /* CSS Variables */
+        :root {
+            --color-bg: #101214;
+            --color-text: #7A7C80;
+            --color-white: #fff;
+            --color-accent: #4a90e2;
+            --color-accent-hover: #357abd;
+            --font-primary: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --transition-speed: 0.2s;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Global Styles */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            line-height: 1.7;
+        }
+
+        h1, h2, h3, .white {
+            color: var(--color-white);
+        }
+
+        a {
+            color: var(--color-text);
+            text-decoration: none;
+            transition: color var(--transition-speed) ease;
+        }
+
+        a:focus {
+            outline: 2px solid var(--color-white);
+            outline-offset: 3px;
+        }
+
+        /* Skip to content */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--color-accent);
+            color: var(--color-white);
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 9999;
+            font-weight: bold;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background: linear-gradient(135deg, #1a1c1e 0%, #101214 100%);
+            padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar .fa-code {
+            margin-bottom: 1.5rem;
+            animation: float 3s ease-in-out infinite;
+            color: var(--color-accent);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .sidebar h1 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .sidebar .tagline {
+            font-size: clamp(0.95rem, 2vw, 1.1rem);
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .sidebar .location {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            margin-bottom: 2rem;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transition: all var(--transition-speed) ease;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .social-links a:hover,
+        .social-links a:focus {
+            color: var(--color-white);
+            background: var(--color-accent);
+            transform: scale(1.1);
+        }
+
+        /* Navigation */
+        .nav-menu {
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            border-radius: 8px;
+            transition: all var(--transition-speed) ease;
+            font-weight: 500;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            background: rgba(74, 144, 226, 0.1);
+            color: var(--color-white);
+            transform: translateX(5px);
+        }
+
+        /* Active navigation link */
+        .nav-menu a.active {
+            background: var(--color-accent);
+            color: var(--color-white);
+            transform: translateX(5px);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 3rem 4rem;
+            overflow-y: auto;
+        }
+
+        section {
+            margin-bottom: 4rem;
+            scroll-margin-top: 2rem;
+        }
+
+        section h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--color-accent);
+        }
+
+        section h3 {
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        /* About Section */
+        #about p {
+            font-size: clamp(1rem, 2vw, 1.15rem);
+        }
+
+        /* Experience Section */
+        .experience-item {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border-left: 3px solid var(--color-accent);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .experience-item:hover {
+            background: rgba(255, 255, 255, 0.04);
+            transform: translateX(5px);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .experience-title {
+            flex: 1;
+        }
+
+        .experience-title h3 {
+            margin-bottom: 0.25rem;
+        }
+
+        .company {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        .duration {
+            color: var(--color-text);
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        .skills-used {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: rgba(74, 144, 226, 0.15);
+            color: var(--color-accent);
+            padding: 0.35rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .skill-tag:hover {
+            background: var(--color-accent);
+            color: var(--color-white);
+        }
+
+        /* Skills Section */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all var(--transition-speed) ease;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .skill-item:hover {
+            background: rgba(74, 144, 226, 0.1);
+            border-color: var(--color-accent);
+            transform: translateY(-3px);
+        }
+
+        .skill-item i {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-accent);
+        }
+
+        .skill-name {
+            color: var(--color-white);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all var(--transition-speed) ease;
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--color-accent);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .project-card h3 {
+            margin-bottom: 0.75rem;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-link {
+            color: var(--color-accent);
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .project-link:hover {
+            color: var(--color-white);
+        }
+
+        .project-link i {
+            transition: transform var(--transition-speed) ease;
+        }
+
+        .project-link:hover i {
+            transform: translateX(5px);
+        }
+
+        /* Education Section */
+        .education-item {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 8px;
+            border-left: 3px solid var(--color-accent);
+        }
+
+        .education-item h3 {
+            margin-bottom: 0.25rem;
+        }
+
+        .degree {
+            color: var(--color-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .school {
+            color: var(--color-accent);
+            font-weight: 500;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            transition: all var(--transition-speed) ease;
+        }
+
+        .contact-item:hover {
+            background: rgba(74, 144, 226, 0.1);
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            width: 30px;
+            text-align: center;
+        }
+
+        .contact-item a {
+            color: var(--color-white);
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+                padding: 2rem 1.5rem;
+            }
+
+            .main-content {
+                padding: 2rem 1.5rem;
+            }
+
+            .nav-menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+
+            .nav-menu a {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .experience-header {
+                flex-direction: column;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+
+            .sidebar {
+                position: static;
+                height: auto;
+            }
+
+            .sidebar .fa-code,
+            .social-links,
+            .nav-menu {
+                display: none;
+            }
+
+            .container {
+                display: block;
+            }
+
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="grid-2">
-        <div class="section-1">
-            <i class="fas fa-code fa-5x white"></i>
-            <h2>Karlo</h2>
-            <p>Zagreb, Croatia</p>
-            <a href="https://hrva.cc/karlo-linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://hrva.cc/karlo-github"><i class="fab fa-github"></i></a>
-        </div>
+<!-- Skip to content -->
+<a href="#main-content" class="skip-link">Skip to content</a>
 
-        <div class="section-2">
+<div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar" role="complementary">
+        <i class="fas fa-code fa-5x white" aria-hidden="true"></i>
+        <h1>Karlo Hrvačić</h1>
+        <p class="tagline">Software Engineer</p>
+        <p class="location"><i class="fas fa-map-marker-alt"></i> Zagreb, Croatia</p>
+
+        <nav aria-label="Social media links">
+            <div class="social-links">
+                <a href="https://hrva.cc/karlo-linkedin"
+                   aria-label="LinkedIn profile"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://hrva.cc/karlo-github"
+                   aria-label="GitHub profile"
+                   rel="noopener noreferrer"
+                   target="_blank">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+
+        <nav class="nav-menu" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main-content">
+        <!-- About Section -->
+        <section id="about">
             <h2>About</h2>
-            <p>My name is Karlo, and I'm an ambitious bachelor of computing based in Zagreb, Croatia. In my free time, I like to develop tools that can make life easier.</p>
-            
-            <h2>Experience</h2>
-            <p>My expertise is in Java with Spring Framework in which I have the most experience, but I have worked with many technologies like C, C++, Python, PHP, Angular, CSS, JavaScript, C#, MySQL, MongoDB, PostgreSQL, Kubernetes, Helm, Docker, Git, Jenkins, RabbitMq, Liquibase,  Linux, Windows.</p>
-            <p>I love to discover and use new technologies.</p>
-            <h2>Traits</h2>
-            <p>Hardworking, Fast Learner, Self aware, Adaptible, Flexible, Optimistic</p>
-            
-            <h2>Flagship projects</h2>
-            <a href="https://hrva.cc/url-shortener-spring-github">URL Shortener Backend (Java)</a>
-            <a href="https://github.com/karlohrvacic/URL-Shortener-FE">URL Shortener Frontend (Angular)</a>
-            <a href="https://hrva.cc/url-shortener-symfony-github">URL Shortener (PHP)</a>
-            <a href="https://hrva.cc/mean-bank-github">MEAN Bank (JavaScript)</a>
-            <a href="https://hrva.cc/joombooks-github">JoomBooks (PHP)</a>
-            <a href="https://hrva.cc/rolling-github">RollingTheBallGame (Unity/C#)</a>
+            <p>I'm an ambitious software engineer based in Zagreb, Croatia, specializing in Java Spring Framework and cloud-native architectures. Currently building scalable distributed systems at <strong>GreenByteHub</strong>, where I work with cutting-edge technologies like Kubernetes, Elasticsearch, and Prometheus.</p>
+            <p>With over 3 years of professional experience across multiple companies, I've developed expertise in backend development, DevOps practices, and full-stack engineering. I'm passionate about creating tools that make life easier and continuously exploring new technologies to solve complex problems.</p>
+            <p>My technical approach combines strong fundamentals in Java and Spring Boot with modern cloud infrastructure, containerization, and observability practices. I thrive in fast-paced environments and love the challenge of building systems that scale.</p>
+        </section>
 
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Engineer</h3>
+                        <p class="company">GreenByteHub</p>
+                    </div>
+                    <span class="duration">Jul 2024 - Present</span>
+                </div>
+                <p>Building and maintaining cloud-native applications with a focus on scalability and observability. Working extensively with Kubernetes orchestration, Elasticsearch for search and analytics, and implementing comprehensive monitoring solutions.</p>
+                <div class="skills-used">
+                    <span class="skill-tag">Elasticsearch</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Prometheus</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">Helm</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">PostgreSQL</span>
+                </div>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Engineer</h3>
+                        <p class="company">Tacta</p>
+                    </div>
+                    <span class="duration">Apr 2023 - Jul 2024 · 1 yr 4 mos</span>
+                </div>
+                <p>Developed full-stack applications using Spring Boot backend with Angular frontend. Implemented CI/CD pipelines with GitHub Actions and managed infrastructure on AWS. Worked with Terraform for infrastructure as code and containerization with Docker.</p>
+                <div class="skills-used">
+                    <span class="skill-tag">GitHub Actions</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">Gradle</span>
+                    <span class="skill-tag">Flyway</span>
+                </div>
+            </article>
+
+            <article class="experience-item">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Engineer</h3>
+                        <p class="company">BISS d.o.o.</p>
+                    </div>
+                    <span class="duration">Feb 2022 - Apr 2023 · 1 yr 3 mos</span>
+                </div>
+                <p>Started professional career developing enterprise Java applications with Spring Boot. Gained experience with containerization using Docker and Kubernetes, database migrations with Liquibase, and build automation with Maven and Jenkins.</p>
+                <div class="skills-used">
+                    <span class="skill-tag">Spring Boot</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">Maven</span>
+                    <span class="skill-tag">Liquibase</span>
+                    <span class="skill-tag">RabbitMQ</span>
+                    <span class="skill-tag">Helm</span>
+                    <span class="skill-tag">Jenkins</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <div class="skill-name">Java</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-leaf"></i>
+                    <div class="skill-name">Spring Boot</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-dharmachakra"></i>
+                    <div class="skill-name">Kubernetes</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-docker"></i>
+                    <div class="skill-name">Docker</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <div class="skill-name">PostgreSQL</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-search"></i>
+                    <div class="skill-name">Elasticsearch</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="skill-name">Prometheus</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-chart-area"></i>
+                    <div class="skill-name">Grafana</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-exchange-alt"></i>
+                    <div class="skill-name">RabbitMQ</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-angular"></i>
+                    <div class="skill-name">Angular</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-aws"></i>
+                    <div class="skill-name">AWS</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-code-branch"></i>
+                    <div class="skill-name">Git</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-github"></i>
+                    <div class="skill-name">GitHub Actions</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cogs"></i>
+                    <div class="skill-name">Jenkins</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cube"></i>
+                    <div class="skill-name">Maven</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cubes"></i>
+                    <div class="skill-name">Gradle</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-ship"></i>
+                    <div class="skill-name">Helm</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cloud"></i>
+                    <div class="skill-name">Terraform</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <div class="skill-name">Python</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <div class="skill-name">PHP</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <div class="skill-name">JavaScript</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node"></i>
+                    <div class="skill-name">Node.js</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-bootstrap"></i>
+                    <div class="skill-name">Bootstrap</div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-linux"></i>
+                    <div class="skill-name">Linux</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2>Flagship Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <h3>URL Shortener (Spring Boot)</h3>
+                    <p>Full-featured URL shortening service built with Java Spring Boot backend. Implements RESTful API, database persistence, and analytics tracking.</p>
+                    <a href="https://hrva.cc/url-shortener-spring-github"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>URL Shortener (Angular)</h3>
+                    <p>Modern frontend application for the URL shortener service. Built with Angular, featuring responsive design and real-time statistics.</p>
+                    <a href="https://github.com/karlohrvacic/URL-Shortener-FE"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>URL Shortener (Symfony/PHP)</h3>
+                    <p>Alternative implementation of URL shortening service using Symfony framework. Demonstrates proficiency in PHP and MVC architecture.</p>
+                    <a href="https://hrva.cc/url-shortener-symfony-github"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>MEAN Bank</h3>
+                    <p>Full-stack banking application built with MEAN stack (MongoDB, Express, Angular, Node.js). Features account management and transaction processing.</p>
+                    <a href="https://hrva.cc/mean-bank-github"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>JoomBooks</h3>
+                    <p>Book management system developed with PHP. Includes CRUD operations, search functionality, and user authentication.</p>
+                    <a href="https://hrva.cc/joombooks-github"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Rolling The Ball Game</h3>
+                    <p>3D puzzle game developed in Unity using C#. Features physics-based gameplay, multiple levels, and intuitive controls.</p>
+                    <a href="https://hrva.cc/rolling-github"
+                       class="project-link"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View on GitHub <i class="fas fa-arrow-right"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>Education</h2>
+            <article class="education-item">
+                <h3>Bachelor of Computing</h3>
+                <p class="degree">Computing · 2019 - 2022</p>
+                <p class="school">Zagreb University of Applied Sciences</p>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
             <h2>Contact</h2>
-            <p>karlo@hrva.cc</p>
-        </div>
-    </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:karlo@hrva.cc">karlo@hrva.cc</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://hrva.cc/karlo-linkedin" target="_blank" rel="noopener noreferrer">linkedin.com/in/karlohrvacic</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://hrva.cc/karlo-github" target="_blank" rel="noopener noreferrer">github.com/karlohrvacic</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Zagreb, Croatia</span>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<!-- Scroll Spy Navigation Script -->
+<script>
+    // Scroll spy for navigation highlighting
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+
+    function highlightNavigation() {
+        const scrollY = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionHeight = section.offsetHeight;
+            const sectionTop = section.offsetTop - 100; // Offset for better UX
+            const sectionId = section.getAttribute('id');
+            const correspondingLink = document.querySelector(`.nav-menu a[href="#${sectionId}"]`);
+
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                // Remove active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Add active class to current link
+                if (correspondingLink) {
+                    correspondingLink.classList.add('active');
+                }
+            }
+        });
+    }
+
+    // Highlight on scroll
+    window.addEventListener('scroll', highlightNavigation);
+
+    // Highlight on page load
+    highlightNavigation();
+
+    // Smooth scroll with active state update
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+
+                // Update active state immediately on click
+                navLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            }
+        });
+    });
+</script>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "874d87a863dd47ba8d7e55e3e52b87e9"}'></script>
 </body>
 </html>
-<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "874d87a863dd47ba8d7e55e3e52b87e9"}'></script><!-- End Cloudflare Web Analytics -->
