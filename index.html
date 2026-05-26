@@ -8,7 +8,7 @@
     <!-- Primary SEO -->
     <title>Karlo Hrvačić — Software Engineer | Java · Kubernetes · Zagreb</title>
     <meta name="title" content="Karlo Hrvačić — Software Engineer | Java · Kubernetes · Zagreb">
-    <meta name="description" content="Karlo Hrvačić — Software Engineer in Zagreb, Croatia. Java Spring Boot, Kubernetes &amp; cloud-native systems at GreenByteHub. 4+ years experience.">
+    <meta name="description" content="Karlo Hrvačić — Software Engineer in Zagreb, Croatia. Java Spring Boot, Kubernetes &amp; cloud-native systems at GreenByteHub. 4+ years experience. Open to opportunities.">
     <meta name="keywords" content="Karlo Hrvačić, Software Engineer Zagreb, Java Spring Boot, Kubernetes expert, Elasticsearch, DevOps Croatia, GreenByteHub, backend developer, cloud-native, Keycloak, OPA">
     <meta name="author" content="Karlo Hrvačić">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -75,6 +75,7 @@
             "url": "https://greenbytehub.com"
         },
         "description": "Software Engineer specializing in Java Spring Boot, Kubernetes, Elasticsearch, and cloud-native distributed systems",
+        "image": "https://greenbytehub.hr/img/team/karlo_hrvacic.webp",
         "email": "karlo@hrva.cc",
         "address": {
             "@type": "PostalAddress",
@@ -91,7 +92,8 @@
         "sameAs": [
             "https://www.linkedin.com/in/karlohrvacic",
             "https://github.com/karlohrvacic",
-            "https://karlo.cc/"
+            "https://karlo.cc/",
+            "https://hrva.cc/"
         ]
     }
     </script>
@@ -105,7 +107,15 @@
         "name": "Karlo Hrvačić",
         "description": "Personal portfolio of Karlo Hrvačić, Software Engineer",
         "author": { "@id": "https://karlo.cc/#person" },
-        "inLanguage": "en"
+        "inLanguage": "en",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://karlo.cc/?s={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+        }
     }
     </script>
     <!-- Structured Data: FAQ (AEO — name search answers) -->
@@ -145,7 +155,136 @@
                     "@type": "Answer",
                     "text": "Karlo Hrvačić has two flagship projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN."
                 }
+            },
+            {
+                "@type": "Question",
+                "name": "How can I contact Karlo Hrvačić?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Karlo Hrvačić can be reached by email at karlo@hrva.cc, on LinkedIn at linkedin.com/in/karlohrvacic, or on GitHub at github.com/karlohrvacic."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is Karlo Hrvačić open to new opportunities?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, Karlo Hrvačić is open to new opportunities. He is a Software Engineer based in Zagreb, Croatia, with 4+ years of experience in Java Spring Boot, Kubernetes, and cloud-native systems. Feel free to reach out at karlo@hrva.cc."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Karlo Hrvačić's educational background?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Karlo Hrvačić holds a Bachelor of Computing from Zagreb University of Applied Sciences (TVZ), completed in 2022."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What DevOps tools does Karlo Hrvačić use?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Karlo Hrvačić works with Kubernetes, Docker, Helm, Terraform, Jenkins, Prometheus, Grafana, AWS, and Cloudflare — managing cloud-native infrastructure and CI/CD pipelines for production systems."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is hrva.cc?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "hrva.cc is a production-grade link shortener built by Karlo Hrvačić. It features a Spring Boot REST API backend and a Next.js frontend at app.hrva.cc, with API key authentication, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is gableci.hrva.cc?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "gableci.hrva.cc is a weekly lunch menu aggregator for Samobor restaurants built by Karlo Hrvačić. It uses a Python OCR pipeline powered by Gemini AI to extract menus from images, combines them with web-scraped data, and generates AI-recommended daily picks served as static JSON from a CDN."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What security and identity tools does Karlo Hrvačić work with?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Karlo Hrvačić has hands-on experience with Keycloak for identity and access management, Open Policy Agent (OPA) for policy-based authorization, and Microsoft Entra ID for enterprise identity integration."
+                }
             }
+        ]
+    }
+    </script>
+    <!-- Structured Data: ProfilePage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": "https://karlo.cc/#profilepage",
+        "url": "https://karlo.cc/",
+        "name": "Karlo Hrvačić — Software Engineer",
+        "dateCreated": "2024-01-01",
+        "dateModified": "2026-05-26",
+        "mainEntity": { "@id": "https://karlo.cc/#person" },
+        "isPartOf": { "@id": "https://karlo.cc/#website" }
+    }
+    </script>
+    <!-- Structured Data: SoftwareApplication — hrva.cc -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://hrva.cc/#app",
+        "name": "hrva.cc Link Shortener",
+        "url": "https://hrva.cc/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "Production-grade link shortener with a Spring Boot REST API backend and Next.js frontend. Features API key authentication, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration.",
+        "author": { "@id": "https://karlo.cc/#person" }
+    }
+    </script>
+    <!-- Structured Data: SoftwareApplication — gableci.hrva.cc -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://gableci.hrva.cc/#app",
+        "name": "gableci.hrva.cc — Lunch Menu Aggregator",
+        "url": "https://gableci.hrva.cc/",
+        "applicationCategory": "FoodEstablishment",
+        "operatingSystem": "Web",
+        "description": "Weekly lunch menu aggregator for Samobor restaurants. Python OCR pipeline (Gemini AI) extracts menus from images, combines web-scraped data, and serves AI-generated daily picks as static JSON from a CDN.",
+        "author": { "@id": "https://karlo.cc/#person" }
+    }
+    </script>
+    <!-- Structured Data: WebPage + Speakable -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://karlo.cc/#webpage",
+        "url": "https://karlo.cc/",
+        "name": "Karlo Hrvačić — Software Engineer",
+        "isPartOf": { "@id": "https://karlo.cc/#website" },
+        "about": { "@id": "https://karlo.cc/#person" },
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".about-text", ".faq-section"]
+        }
+    }
+    </script>
+    <!-- Structured Data: Organization — HrvaLabs.net -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://hrva.cc/#organization",
+        "name": "HrvaLabs.net",
+        "url": "https://hrva.cc/",
+        "founder": { "@id": "https://karlo.cc/#person" },
+        "sameAs": [
+            "https://hrva.cc/",
+            "https://github.com/karlohrvacic"
         ]
     }
     </script>
@@ -624,7 +763,8 @@
             font-size: 1rem;
             font-weight: 700;
             color: var(--text-bright);
-            margin-bottom: .2rem;
+            margin: 0 0 .2rem 0;
+            padding: 0;
         }
 
         .exp-company {
@@ -977,6 +1117,41 @@
             font-weight: 500;
         }
 
+        /* === FAQ === */
+        .faq-section { margin-top: 0; }
+
+        .faq-list {
+            display: flex;
+            flex-direction: column;
+            gap: .75rem;
+        }
+
+        .faq-item {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.1rem 1.25rem;
+            transition: border-color .2s;
+        }
+
+        .faq-item:hover { border-color: var(--border-hi); }
+
+        .faq-q {
+            font-family: var(--font-display);
+            font-size: .92rem;
+            font-weight: 700;
+            color: var(--text-bright);
+            margin: 0 0 .45rem 0;
+            padding: 0;
+        }
+
+        .faq-a {
+            font-size: .86rem;
+            color: var(--text);
+            line-height: 1.75;
+            margin: 0;
+        }
+
         /* === UTILS === */
         @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
@@ -1052,7 +1227,8 @@
                 <a href="#skills"    class="nav-link"><span class="nav-num">03</span><span class="nav-label">Skills</span></a>
                 <a href="#projects"  class="nav-link"><span class="nav-num">04</span><span class="nav-label">Projects</span></a>
                 <a href="#education" class="nav-link"><span class="nav-num">05</span><span class="nav-label">Education</span></a>
-                <a href="#contact"   class="nav-link"><span class="nav-num">06</span><span class="nav-label">Contact</span></a>
+                <a href="#faq"       class="nav-link"><span class="nav-num">06</span><span class="nav-label">FAQ</span></a>
+                <a href="#contact"   class="nav-link"><span class="nav-num">07</span><span class="nav-label">Contact</span></a>
             </nav>
 
             <div class="social">
@@ -1115,7 +1291,7 @@
                     <article class="exp-card reveal" data-delay="50">
                         <div class="exp-header">
                             <div>
-                                <div class="exp-role">Software Engineer</div>
+                                <h3 class="exp-role">Software Engineer</h3>
                                 <div class="exp-company">GreenByteHub</div>
                             </div>
                             <span class="exp-duration">Jul 2024 — Present</span>
@@ -1143,7 +1319,7 @@
                     <article class="exp-card reveal" data-delay="120">
                         <div class="exp-header">
                             <div>
-                                <div class="exp-role">Software Engineer</div>
+                                <h3 class="exp-role">Software Engineer</h3>
                                 <div class="exp-company">Tacta</div>
                             </div>
                             <span class="exp-duration">Apr 2023 — Jul 2024 · 1y 4m</span>
@@ -1164,7 +1340,7 @@
                     <article class="exp-card reveal" data-delay="190">
                         <div class="exp-header">
                             <div>
-                                <div class="exp-role">Software Engineer</div>
+                                <h3 class="exp-role">Software Engineer</h3>
                                 <div class="exp-company">BISS d.o.o.</div>
                             </div>
                             <span class="exp-duration">Feb 2022 — Apr 2023 · 1y 3m</span>
@@ -1489,11 +1665,55 @@
                 </div>
             </section>
 
+            <!-- FAQ -->
+            <section id="faq">
+                <div class="reveal faq-section">
+                    <div class="section-header">
+                        <span class="section-num">06</span>
+                        <h2 class="section-title">FAQ</h2>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <h3 class="faq-q">Who is Karlo Hrvačić?</h3>
+                            <p class="faq-a">Software Engineer at GreenByteHub in Zagreb, Croatia. I specialize in Java Spring Boot, Kubernetes, and cloud-native distributed systems with 4+ years of professional experience.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What technologies do you specialize in?</h3>
+                            <p class="faq-a">Java, Spring Boot, Kubernetes, Docker, Elasticsearch, PostgreSQL, Redis, Keycloak, OPA, Prometheus, Grafana, and cloud-native architectures on AWS and Terraform.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">Are you open to new opportunities?</h3>
+                            <p class="faq-a">Yes — I'm open to new opportunities. Reach me at <a href="mailto:karlo@hrva.cc">karlo@hrva.cc</a> or on <a href="https://hrva.cc/karlo-linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What is hrva.cc?</h3>
+                            <p class="faq-a">A production-grade link shortener I built — Spring Boot REST API backend, Next.js frontend at app.hrva.cc. Supports API key auth, click analytics, custom slugs, link expiration, and Google Safe Browsing.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What is gableci.hrva.cc?</h3>
+                            <p class="faq-a">A weekly lunch menu aggregator for Samobor restaurants. A Python OCR pipeline (Gemini AI) extracts menus from scanned images, combines them with web-scraped data, and generates AI-picked daily recommendations served as static JSON from a CDN.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What DevOps tools do you use?</h3>
+                            <p class="faq-a">Kubernetes, Docker, Helm, Terraform, Jenkins, Prometheus, Grafana, AWS, and Cloudflare — managing cloud-native infrastructure and CI/CD pipelines for production systems.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What security tools do you work with?</h3>
+                            <p class="faq-a">Keycloak for identity and access management, Open Policy Agent (OPA) for policy-based authorization, and Microsoft Entra ID for enterprise identity integration.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h3 class="faq-q">What is your educational background?</h3>
+                            <p class="faq-a">Bachelor of Computing from Zagreb University of Applied Sciences (TVZ), completed in 2022.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Contact -->
             <section id="contact">
                 <div class="reveal">
                     <div class="section-header">
-                        <span class="section-num">06</span>
+                        <span class="section-num">07</span>
                         <h2 class="section-title">Contact</h2>
                     </div>
                     <div class="contact-grid">
