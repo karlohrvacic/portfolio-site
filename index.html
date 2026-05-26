@@ -140,10 +140,10 @@
             },
             {
                 "@type": "Question",
-                "name": "What is Karlo Hrvačić's flagship project?",
+                "name": "What are Karlo Hrvačić's flagship projects?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Karlo Hrvačić built and maintains hrva.cc, a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc. It features API key access, click analytics, custom short URLs, automatic link expiration, Google Safe Browsing integration, and a management dashboard backed by PostgreSQL."
+                    "text": "Karlo Hrvačić has two flagship projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN."
                 }
             }
         ]
@@ -1084,7 +1084,7 @@
                     <div class="about-text">
                         <p>Ambitious software engineer based in <strong>Zagreb, Croatia</strong>, specialising in <em>Java Spring Framework</em> and cloud-native architectures. Currently building scalable distributed systems at <strong>GreenByteHub</strong>, working with Kubernetes, Elasticsearch, Keycloak, and Prometheus every day.</p>
                         <p>With <strong><span id="years-exp">4</span>+ years</strong> of professional experience across multiple companies, I've developed deep expertise in backend engineering, DevOps practices, identity &amp; access management, and full-stack development. I thrive in fast-paced environments and love the challenge of building systems that scale.</p>
-                        <p>Outside of work I maintain <em>hrva.cc</em> — a production link shortener with API, analytics, custom domains, and a full Angular frontend at <em>app.hrva.cc</em>.</p>
+                        <p>Outside of work I build and maintain side projects: <em>hrva.cc</em> — a production link shortener with API, analytics, and a Next.js frontend — and <em>gableci.hrva.cc</em>, a lunch menu aggregator for Samobor restaurants powered by a Python OCR pipeline, Gemini AI, and web scraping.</p>
                     </div>
                     <div class="stats-row">
                         <div class="stat-item">
@@ -1348,6 +1348,77 @@
                                 </a>
                                 <a href="https://github.com/karlohrvacic/URL-Shortener-FE" class="proj-link proj-link--secondary" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-github" aria-hidden="true"></i> Frontend Source
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Flagship #2 -->
+                        <article class="proj-card proj-card--flagship reveal" data-delay="80">
+                            <div class="flagship-header">
+                                <div class="proj-icon" style="width:48px;height:48px;font-size:1.1rem;">
+                                    <i class="fas fa-utensils" aria-hidden="true"></i>
+                                </div>
+                                <div class="flagship-meta">
+                                    <span class="proj-badge">Flagship · Production</span>
+                                    <h3 class="proj-title">gableci.hrva.cc — Lunch Menu Aggregator</h3>
+                                </div>
+                            </div>
+                            <p class="proj-desc">Weekly lunch menu aggregator for Samobor restaurants — Python pipeline OCRs physical menu photos with Gemini AI, scrapes web menus, generates daily AI picks, and serves structured JSON from CDN to a zero-backend static frontend.</p>
+                            <div class="feat-grid">
+                                <div class="feat-item">
+                                    <i class="fas fa-camera feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">OCR Pipeline</div>
+                                        <div class="feat-sub">Extracts menus from photos via Gemini AI or Ollama</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-robot feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">AI Picks</div>
+                                        <div class="feat-sub">Daily lunch recommendations generated Mon–Fri</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-store feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">3 Restaurants</div>
+                                        <div class="feat-sub">Stadion, Vugrinšćak &amp; Breza on one screen</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-spider feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Web Scraping</div>
+                                        <div class="feat-sub">Breza menu auto-scraped from restaurant site</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-cloud feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">CDN Delivery</div>
+                                        <div class="feat-sub">Weekly JSON served from cdn.hrva.cc</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-bolt feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Zero Backend</div>
+                                        <div class="feat-sub">Pure static frontend, no server runtime</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-list" style="margin-bottom:1.25rem">
+                                <span class="tag">Python</span>
+                                <span class="tag">Gemini AI</span>
+                                <span class="tag">OCR</span>
+                                <span class="tag">Web Scraping</span>
+                                <span class="tag">Vanilla JS</span>
+                                <span class="tag">Cloudflare CDN</span>
+                            </div>
+                            <div class="proj-links">
+                                <a href="https://gableci.hrva.cc" class="proj-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live App
                                 </a>
                             </div>
                         </article>
