@@ -150,10 +150,10 @@
             },
             {
                 "@type": "Question",
-                "name": "What are Karlo Hrvačić's flagship projects?",
+                "name": "What are Karlo Hrvačić's featured projects?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Karlo Hrvačić has two flagship projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN."
+                    "text": "Karlo Hrvačić has three featured projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN. Third, drive.hrva.cc — a privacy-first OBD2 drive-analysis platform that turns Car Scanner exports into instant reports with route maps, eco and cost coaching, and engine health insights; the analysis server is stateless and all driving history stays in the user's browser."
                 }
             },
             {
@@ -206,6 +206,14 @@
             },
             {
                 "@type": "Question",
+                "name": "What is drive.hrva.cc?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "drive.hrva.cc is a privacy-first OBD2 drive-analysis web app built by Karlo Hrvačić. Uploading a Car Scanner export produces an instant report — drive summary, speed-coloured route map, eco and cost coaching, and engine health insights — plus client-side history with trends, spending periods, named places, drive replay, and QR-paired device-to-device sync. The Python FastAPI analysis server is stateless; all driving data stays in the browser."
+                }
+            },
+            {
+                "@type": "Question",
                 "name": "What security and identity tools does Karlo Hrvačić work with?",
                 "acceptedAnswer": {
                     "@type": "Answer",
@@ -224,7 +232,7 @@
         "url": "https://karlo.cc/",
         "name": "Karlo Hrvačić — Software Engineer",
         "dateCreated": "2024-01-01",
-        "dateModified": "2026-05-26",
+        "dateModified": "2026-06-11",
         "mainEntity": { "@id": "https://karlo.cc/#person" },
         "isPartOf": { "@id": "https://karlo.cc/#website" }
     }
@@ -254,6 +262,20 @@
         "applicationCategory": "FoodEstablishment",
         "operatingSystem": "Web",
         "description": "Weekly lunch menu aggregator for Samobor restaurants. Python OCR pipeline (Gemini AI) extracts menus from images, combines web-scraped data, and serves AI-generated daily picks as static JSON from a CDN.",
+        "author": { "@id": "https://karlo.cc/#person" }
+    }
+    </script>
+    <!-- Structured Data: SoftwareApplication — drive.hrva.cc -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "@id": "https://drive.hrva.cc/#app",
+        "name": "drive.hrva.cc — OBD2 Drive Intelligence",
+        "url": "https://drive.hrva.cc/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Web",
+        "description": "Privacy-first OBD2 drive analyzer: Car Scanner exports become instant reports with route maps, eco and cost coaching, and engine health insights. Stateless Python FastAPI backend; the entire driving history stays in the browser (PWA).",
         "author": { "@id": "https://karlo.cc/#person" }
     }
     </script>
@@ -850,14 +872,14 @@
             box-shadow: 0 16px 40px rgba(0,0,0,.3), 0 0 0 1px rgba(52,211,153,.08);
         }
 
-        /* flagship card */
-        .proj-card--flagship {
+        /* featured card */
+        .proj-card--featured {
             grid-column: 1 / -1;
             border-color: rgba(52,211,153,.18);
             background: linear-gradient(135deg, rgba(52,211,153,.05) 0%, var(--surface) 50%);
         }
 
-        .proj-card--flagship:hover {
+        .proj-card--featured:hover {
             border-color: rgba(52,211,153,.35);
             box-shadow: 0 16px 48px rgba(0,0,0,.35), 0 0 0 1px rgba(52,211,153,.15), 0 0 60px rgba(52,211,153,.04);
         }
@@ -875,14 +897,14 @@
             flex-shrink: 0;
         }
 
-        .flagship-header {
+        .featured-header {
             display: flex;
             align-items: flex-start;
             gap: 1rem;
             margin-bottom: 1rem;
         }
 
-        .flagship-meta { flex: 1; }
+        .featured-meta { flex: 1; }
 
         .proj-badge {
             font-family: var(--font-mono);
@@ -906,7 +928,7 @@
             margin-bottom: .5rem;
         }
 
-        .proj-card--flagship .proj-title { font-size: 1.15rem; }
+        .proj-card--featured .proj-title { font-size: 1.15rem; }
 
         .proj-desc {
             font-size: .85rem;
@@ -942,7 +964,7 @@
 
         .proj-link--secondary:hover { color: var(--text-bright); gap: .55rem; }
 
-        /* Feature grid inside flagship card */
+        /* Feature grid inside featured card */
         .feat-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -1153,7 +1175,7 @@
             .stats-row { grid-template-columns: 1fr; gap: 1px; }
             .skill-row { grid-template-columns: 1fr; gap: .4rem; }
             .projects-grid { grid-template-columns: 1fr; }
-            .proj-card--flagship { grid-column: 1; }
+            .proj-card--featured { grid-column: 1; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1230,7 +1252,7 @@
                     <div class="about-text">
                         <p>Ambitious software engineer based in <strong>Zagreb, Croatia</strong>, specialising in <em>Java Spring Framework</em> and cloud-native architectures. Currently building scalable distributed systems at <strong>GreenByteHub</strong>, working with Kubernetes, Elasticsearch, Keycloak, and Prometheus every day.</p>
                         <p>With <strong><span id="years-exp">4</span>+ years</strong> of professional experience across multiple companies, I've developed deep expertise in backend engineering, DevOps practices, identity &amp; access management, and full-stack development. I thrive in fast-paced environments and love the challenge of building systems that scale.</p>
-                        <p>Outside of work I build and maintain side projects: <em>hrva.cc</em> — a production link shortener with API, analytics, and a Next.js frontend — and <em>gableci.hrva.cc</em>, a lunch menu aggregator for Samobor restaurants powered by a Python OCR pipeline, Gemini AI, and web scraping.</p>
+                        <p>Outside of work I build and maintain side projects: <em>hrva.cc</em> — a production link shortener with API, analytics, and a Next.js frontend — <em>gableci.hrva.cc</em>, a lunch menu aggregator for Samobor restaurants powered by a Python OCR pipeline, Gemini AI, and web scraping — and <em>drive.hrva.cc</em>, a privacy-first OBD2 drive analyzer with a stateless backend where all driving history stays in the browser.</p>
                     </div>
                     <div class="stats-row">
                         <div class="stat-item">
@@ -1421,14 +1443,14 @@
                     </div>
                     <div class="projects-grid">
 
-                        <!-- Flagship -->
-                        <article class="proj-card proj-card--flagship reveal" data-delay="40">
-                            <div class="flagship-header">
+                        <!-- Featured -->
+                        <article class="proj-card proj-card--featured reveal" data-delay="40">
+                            <div class="featured-header">
                                 <div class="proj-icon" style="width:48px;height:48px;font-size:1.1rem;">
                                     <i class="fas fa-link" aria-hidden="true"></i>
                                 </div>
-                                <div class="flagship-meta">
-                                    <span class="proj-badge">Flagship · Production</span>
+                                <div class="featured-meta">
+                                    <span class="proj-badge">Featured · Production</span>
                                     <h3 class="proj-title">hrva.cc — Link Shortener Platform</h3>
                                 </div>
                             </div>
@@ -1498,14 +1520,14 @@
                             </div>
                         </article>
 
-                        <!-- Flagship #2 -->
-                        <article class="proj-card proj-card--flagship reveal" data-delay="80">
-                            <div class="flagship-header">
+                        <!-- Featured #2 -->
+                        <article class="proj-card proj-card--featured reveal" data-delay="80">
+                            <div class="featured-header">
                                 <div class="proj-icon" style="width:48px;height:48px;font-size:1.1rem;">
                                     <i class="fas fa-utensils" aria-hidden="true"></i>
                                 </div>
-                                <div class="flagship-meta">
-                                    <span class="proj-badge">Flagship · Production</span>
+                                <div class="featured-meta">
+                                    <span class="proj-badge">Featured · Production</span>
                                     <h3 class="proj-title">gableci.hrva.cc — Lunch Menu Aggregator</h3>
                                 </div>
                             </div>
@@ -1565,6 +1587,81 @@
                             <div class="proj-links">
                                 <a href="https://gableci.hrva.cc" class="proj-link" target="_blank" rel="noopener noreferrer">
                                     <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live App
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Featured #3 -->
+                        <article class="proj-card proj-card--featured reveal" data-delay="100">
+                            <div class="featured-header">
+                                <div class="proj-icon" style="width:48px;height:48px;font-size:1.1rem;">
+                                    <i class="fas fa-car" aria-hidden="true"></i>
+                                </div>
+                                <div class="featured-meta">
+                                    <span class="proj-badge">Featured · Production</span>
+                                    <h3 class="proj-title">drive.hrva.cc — OBD2 Drive Intelligence</h3>
+                                </div>
+                            </div>
+                            <p class="proj-desc">Privacy-first drive analyzer for Car Scanner OBD2 exports — Python FastAPI analysis engine behind a React/TypeScript PWA. The server is <strong style="color:var(--text-bright)">stateless</strong>: reports are computed in memory and the entire driving history lives in the browser.</p>
+                            <div class="feat-grid">
+                                <div class="feat-item">
+                                    <i class="fas fa-route feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Drive Reports</div>
+                                        <div class="feat-sub">Summary, speed-coloured route map, eco &amp; cost coaching</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-user-shield feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Privacy First</div>
+                                        <div class="feat-sub">Stateless server — history stays on-device in IndexedDB</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-chart-line feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Trends &amp; Periods</div>
+                                        <div class="feat-sub">Day/week/month/year spend + consumption-drift flag</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-map-marker-alt feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Places &amp; Auto-Tags</div>
+                                        <div class="feat-sub">Offline geocoding; Home/Work geo circles tag drives</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-sync-alt feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Device Sync</div>
+                                        <div class="feat-sub">QR-paired, end-to-end encrypted, browser-to-browser</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-play-circle feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Drive Replay</div>
+                                        <div class="feat-sub">Re-run any drive on the map with live speed &amp; RPM</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-list" style="margin-bottom:1.25rem">
+                                <span class="tag">Python</span>
+                                <span class="tag">FastAPI</span>
+                                <span class="tag">pandas</span>
+                                <span class="tag">React</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">PWA</span>
+                            </div>
+                            <div class="proj-links">
+                                <a href="https://drive.hrva.cc" class="proj-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live App
+                                </a>
+                                <a href="https://github.com/karlohrvacic/drive" class="proj-link proj-link--secondary" target="_blank" rel="noopener noreferrer">
+                                    <i class="fab fa-github" aria-hidden="true"></i> Source
                                 </a>
                             </div>
                         </article>
