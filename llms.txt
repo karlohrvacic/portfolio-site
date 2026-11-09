@@ -1,0 +1,17 @@
+# Karlo Hrvačić
+
+> Personal portfolio of Karlo Hrvačić, a software engineer from Zagreb, Croatia, working on Java Spring Boot, Kubernetes and cloud-native distributed systems.
+
+Karlo Hrvačić works as a software engineer at GreenByteHub in Samobor, Croatia. On his own time he builds and runs small apps under HrvaLabs.
+
+- Contact: karlo@hrva.cc
+- GitHub: https://github.com/karlohrvacic
+- LinkedIn: https://www.linkedin.com/in/karlohrvacic
+
+## Pages
+
+- [Portfolio](https://karlo.cc/): experience, skills and projects
+
+## Related
+
+- [HrvaLabs](https://hrvalabs.net/): his independent software projects and infrastructure
