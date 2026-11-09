@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 
+User-agent: Bytespider
+Disallow: /
+
 # Sitemap
 Sitemap: https://karlo.cc/sitemap.xml
