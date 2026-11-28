@@ -147,7 +147,7 @@
                 "name": "What are Karlo Hrvačić's featured projects?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Karlo Hrvačić has four featured projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, garage.hrva.cc — a Flutter app for tracking fuel, maintenance and running costs across a shared household garage, with a Supabase/PostgreSQL backend using row-level security as the tenancy boundary, shipping to Android and the web from one codebase, open source under AGPL-3.0. Third, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN. Fourth, drive.hrva.cc — a privacy-first OBD2 drive-analysis platform that turns Car Scanner exports into instant reports with route maps, eco and cost coaching, and engine health insights; the analysis server is stateless and all driving history stays in the user's browser."
+                    "text": "Karlo Hrvačić has five featured projects. First, hrva.cc — a production-grade link shortener platform with a Spring Boot REST API backend and Next.js frontend at app.hrva.cc, featuring API key access, click analytics, custom short URLs, automatic link expiration, and Google Safe Browsing integration. Second, garage.hrva.cc — a Flutter app for tracking fuel, maintenance and running costs across a shared household garage, with a Supabase/PostgreSQL backend using row-level security as the tenancy boundary, shipping to Android and the web from one codebase, open source under AGPL-3.0. Third, gableci.hrva.cc — a weekly lunch menu aggregator for Samobor restaurants, powered by a Python OCR pipeline using Gemini AI, web scraping, and AI-generated daily picks served as static JSON from a CDN. Fourth, drive.hrva.cc — a privacy-first OBD2 drive-analysis platform that turns Car Scanner exports into instant reports with route maps, eco and cost coaching, and engine health insights; the analysis server is stateless and all driving history stays in the user's browser. Fifth, candidmoments.hr — the website he built for his brother Emilio's wedding and event photography and film business: an Astro site on Cloudflare Workers with its own admin behind Cloudflare Access single sign-on, and private client galleries with salted, hashed passwords that close and are removed on a date the owner picks."
                 }
             },
             {
@@ -1217,7 +1217,7 @@
                     <div class="about-text">
                         <p>I’m <strong>Karlo Hrvačić</strong> (also written <strong>Karlo Hrvacic</strong> without Croatian diacritics), a software engineer based in <strong>Zagreb, Croatia</strong>, specialising in <em>Java Spring Framework</em> and cloud-native architectures. Currently building scalable distributed systems at <strong>GreenByteHub</strong>, working with Kubernetes, Elasticsearch, Keycloak, and Prometheus every day.</p>
                         <p>With <strong><span id="years-exp">4</span>+ years</strong> of professional experience across multiple companies, I've developed deep expertise in backend engineering, DevOps practices, identity &amp; access management, and full-stack development. I thrive in fast-paced environments and love the challenge of building systems that scale.</p>
-                        <p>Outside of work I build and maintain side projects: <em>hrva.cc</em> — a production link shortener with API, analytics, and a Next.js frontend — <em>garage.hrva.cc</em>, a Flutter app for tracking fuel and maintenance across a shared household garage with Supabase and row-level security as the tenancy boundary — <em>gableci.hrva.cc</em>, a lunch menu aggregator for Samobor restaurants powered by a Python OCR pipeline, Gemini AI, and web scraping — and <em>drive.hrva.cc</em>, a privacy-first OBD2 drive analyzer with a stateless backend where all driving history stays in the browser.</p>
+                        <p>Outside of work I build and maintain side projects: <em>hrva.cc</em> — a production link shortener with API, analytics, and a Next.js frontend — <em>garage.hrva.cc</em>, a Flutter app for tracking fuel and maintenance across a shared household garage with Supabase and row-level security as the tenancy boundary — <em>gableci.hrva.cc</em>, a lunch menu aggregator for Samobor restaurants powered by a Python OCR pipeline, Gemini AI, and web scraping — and <em>drive.hrva.cc</em>, a privacy-first OBD2 drive analyzer with a stateless backend where all driving history stays in the browser. I also built <em>candidmoments.hr</em> for my brother’s photography and film business: the website, an admin he runs it from behind single sign-on, and private client galleries that close on a date he picks.</p>
                     </div>
                     <div class="stats-row">
                         <div class="stat-item">
@@ -1711,6 +1711,79 @@
                                 </a>
                                 <a href="https://github.com/HrvaLabs/drive" class="proj-link proj-link--secondary" target="_blank" rel="noopener noreferrer">
                                     <i class="fab fa-github" aria-hidden="true"></i> Source
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- Featured #5: built for someone else -->
+                        <article class="proj-card proj-card--featured reveal" data-delay="200">
+                            <div class="featured-header">
+                                <div class="proj-icon" style="width:48px;height:48px;font-size:1.1rem;">
+                                    <i class="fas fa-camera" aria-hidden="true"></i>
+                                </div>
+                                <div class="featured-meta">
+                                    <span class="proj-badge">Built for others · Production</span>
+                                    <h3 class="proj-title">candidmoments.hr — Photography &amp; Film Website</h3>
+                                </div>
+                            </div>
+                            <p class="proj-desc">Website, admin and private client galleries I built for my brother Emilio’s wedding and event photography and film business. He runs it himself: pages, galleries and prices from an admin that only opens through <strong style="color:var(--text-bright)">single sign-on</strong>.</p>
+                            <div class="feat-grid">
+                                <div class="feat-item">
+                                    <i class="fas fa-user-shield feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">SSO-Protected Admin</div>
+                                        <div class="feat-sub">Cloudflare Access in front of the admin</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-lock feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Private Galleries</div>
+                                        <div class="feat-sub">Per-gallery passwords, stored as salted hashes</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-hourglass-end feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Expiry Dates</div>
+                                        <div class="feat-sub">Galleries close on a date he picks, then a daily job removes them</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-images feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Browser-Side Resizing</div>
+                                        <div class="feat-sub">Client photos are sized in the browser while they upload</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-database feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Workers, D1, R2 &amp; B2</div>
+                                        <div class="feat-sub">Cloudflare for the site, Backblaze B2 for client originals</div>
+                                    </div>
+                                </div>
+                                <div class="feat-item">
+                                    <i class="fas fa-language feat-icon" aria-hidden="true"></i>
+                                    <div>
+                                        <div class="feat-title">Croatian &amp; English</div>
+                                        <div class="feat-sub">Every public page in both languages</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-list" style="margin-bottom:1.25rem">
+                                <span class="tag">Astro</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Preact</span>
+                                <span class="tag">Cloudflare Workers</span>
+                                <span class="tag">D1</span>
+                                <span class="tag">R2</span>
+                                <span class="tag">Backblaze B2</span>
+                                <span class="tag">Playwright</span>
+                            </div>
+                            <div class="proj-links">
+                                <a href="https://candidmoments.hr/en/" class="proj-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Site
                                 </a>
                             </div>
                         </article>

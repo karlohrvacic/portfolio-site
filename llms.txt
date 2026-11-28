@@ -12,6 +12,10 @@ Karlo Hrvačić works as a software engineer at GreenByteHub in Samobor, Croatia
 
 - [Portfolio](https://karlo.cc/): experience, skills and projects
 
+## Built for others
+
+- [Candid Moments](https://candidmoments.hr/en/): the website, admin and private client galleries he built for his brother Emilio's wedding and event photography and film business
+
 ## Related
 
 - [HrvaLabs](https://hrvalabs.net/): his independent software projects and infrastructure
